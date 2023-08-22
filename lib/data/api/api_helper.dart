@@ -3,11 +3,10 @@ import 'package:weather_stream/data/model/callingFromId.dart';
 import 'dart:async';
 import 'dart:convert';
 import 'package:weather_stream/data/model/cityweather_detail.dart';
+import 'package:weather_stream/data/model/forecastweather.dart';
 import 'package:weather_stream/data/model/geocoding.dart';
 import 'package:weather_stream/data/model/drawerhistory.dart';
-import '../model/forecastweather.dart';
-import '../model/geocoding.dart';
-import '../model/suggestion.dart';
+import 'package:weather_stream/data/model/suggestion.dart';
 
 String url = 'https://api.openweathermap.org/data/2.5/';
 const String androidKey = 'AIzaSyCe2AX8feMvRO1_Q2fV5eERERm0RAX_1a0';
