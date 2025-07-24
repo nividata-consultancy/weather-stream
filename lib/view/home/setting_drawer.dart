@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
-import 'package:share/share.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:store_redirect/store_redirect.dart';
 import 'package:url_launcher/url_launcher_string.dart';
 import 'package:weather_stream/theme/fontsize.dart';
+
 import '../../theme/theme_manager.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -33,6 +34,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
   late bool speedStatus;
   late bool air;
   final animationDuration = const Duration(milliseconds: 0);
+
   _launchPlayStore(appPackageName) async {
     try {
       print('yes');
@@ -78,7 +80,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               'UNIT & FORMAT',
               style: Theme.of(context)
                   .textTheme
-                  .bodyText2!
+                  .bodyMedium!
                   .copyWith(fontWeight: FontWeight.w500, fontSize: heading),
             ),
           ),
@@ -87,7 +89,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             'Temperature',
             style: Theme.of(context)
                 .textTheme
-                .bodyText1!
+                .bodyLarge!
                 .copyWith(fontSize: paraMeter),
           ),
           const SizedBox(height: 5),
@@ -124,7 +126,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               '°C',
                               style: Theme.of(context)
                                   .textTheme
-                                  .subtitle1!
+                                  .titleMedium!
                                   .copyWith(
                                     fontSize: smallSize,
                                     fontWeight: FontWeight.w500,
@@ -144,7 +146,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               '°F',
                               style: Theme.of(context)
                                   .textTheme
-                                  .subtitle1!
+                                  .titleMedium!
                                   .copyWith(
                                     fontSize: smallSize,
                                     fontWeight: FontWeight.w500,
@@ -192,7 +194,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             'Speed',
             style: Theme.of(context)
                 .textTheme
-                .bodyText1!
+                .bodyLarge!
                 .copyWith(fontSize: paraMeter),
           ),
           const SizedBox(height: 5),
@@ -229,7 +231,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               'm/s',
                               style: Theme.of(context)
                                   .textTheme
-                                  .subtitle1!
+                                  .titleMedium!
                                   .copyWith(
                                     fontSize: smallSize,
                                     fontWeight: FontWeight.w500,
@@ -249,7 +251,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               'MPH',
                               style: Theme.of(context)
                                   .textTheme
-                                  .subtitle1!
+                                  .titleMedium!
                                   .copyWith(
                                     fontSize: smallSize,
                                     fontWeight: FontWeight.w500,
@@ -296,7 +298,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             'Air Pressure',
             style: Theme.of(context)
                 .textTheme
-                .bodyText1!
+                .bodyLarge!
                 .copyWith(fontSize: paraMeter),
           ),
           const SizedBox(height: 5),
@@ -333,7 +335,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               'in/hg',
                               style: Theme.of(context)
                                   .textTheme
-                                  .subtitle1!
+                                  .titleMedium!
                                   .copyWith(
                                     fontSize: smallSize,
                                     fontWeight: FontWeight.w500,
@@ -353,7 +355,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                               'hpa',
                               style: Theme.of(context)
                                   .textTheme
-                                  .subtitle1!
+                                  .titleMedium!
                                   .copyWith(
                                     fontSize: smallSize,
                                     fontWeight: FontWeight.w500,
@@ -401,7 +403,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             'Theme',
             style: Theme.of(context)
                 .textTheme
-                .bodyText1!
+                .bodyLarge!
                 .copyWith(fontSize: paraMeter),
           ),
           const SizedBox(height: 5),
@@ -436,7 +438,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 'Day',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .subtitle1!
+                                    .titleMedium!
                                     .copyWith(
                                       fontSize: smallSize,
                                       fontWeight: FontWeight.w500,
@@ -456,7 +458,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                 'Night',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .subtitle1!
+                                    .titleMedium!
                                     .copyWith(
                                       fontSize: smallSize,
                                       fontWeight: FontWeight.w500,
@@ -511,7 +513,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 InkWell(
                   child: Text(
                     'ABOUT US',
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           fontSize: paraMeter,
                           fontWeight: FontWeight.w600,
                         ),
@@ -529,7 +531,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   },
                   child: Text(
                     'RATE US',
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           fontSize: paraMeter,
                           fontWeight: FontWeight.w600,
                         ),
@@ -540,7 +542,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   onTap: () => launchUrlString('https://openweathermap.org/'),
                   child: Text(
                     'WEATHER DATA ',
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           fontSize: paraMeter,
                           fontWeight: FontWeight.w600,
                         ),
@@ -549,12 +551,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 const SizedBox(height: 18),
                 InkWell(
                   onTap: () {
-                    Share.share(
-                        'https://play.google.com/store/apps/details?id=com.nividata.weather_forecast');
+                    SharePlus.instance.share(ShareParams(
+                        uri: Uri.parse(
+                            'https://play.google.com/store/apps/details?id=com.nividata.weather_forecast')));
                   },
                   child: Text(
                     'SHARE',
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                           fontSize: paraMeter,
                           fontWeight: FontWeight.w600,
                         ),
@@ -574,14 +577,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     'Weather Forecast',
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText2!
+                        .bodyMedium!
                         .copyWith(fontSize: 24, fontWeight: FontWeight.w800),
                   ),
                   Text(
                     'A NIVIDATA Product',
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText2!
+                        .bodyMedium!
                         .copyWith(fontSize: paraMeter),
                   ),
                 ],

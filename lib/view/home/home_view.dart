@@ -202,7 +202,7 @@ class _HomeViewState extends State<HomeView> {
         : WillPopScope(
             onWillPop: _willPopCallback,
             child: Scaffold(
-              backgroundColor: Theme.of(context).backgroundColor,
+              backgroundColor: Theme.of(context).scaffoldBackgroundColor,
               key: _scaffoldKey,
               resizeToAvoidBottomInset: false,
               drawer: DrawerScreen(
@@ -257,7 +257,7 @@ class _HomeViewState extends State<HomeView> {
                       ),
                       Text(
                         cityList!.name.toString(),
-                        style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                        style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                             fontWeight: FontWeight.w500, fontSize: heading),
                       ),
                       InkWell(
@@ -418,7 +418,7 @@ class _HomeViewState extends State<HomeView> {
                                                       '°',
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .bodyText2!
+                                                  .bodyMedium!
                                                   .copyWith(
                                                       fontWeight:
                                                           FontWeight.w800,
@@ -486,7 +486,7 @@ class _HomeViewState extends State<HomeView> {
                                                       '°',
                                               style: Theme.of(context)
                                                   .textTheme
-                                                  .bodyText2!
+                                                  .bodyMedium!
                                                   .copyWith(
                                                       fontWeight:
                                                           FontWeight.w400,

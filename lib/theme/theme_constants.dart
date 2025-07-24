@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 ThemeData lightTheme = ThemeData.light().copyWith(
-  backgroundColor: const Color(0xFFF9F9F9),
+  scaffoldBackgroundColor: const Color(0xFFF9F9F9),
   drawerTheme: const DrawerThemeData(
     backgroundColor: Color(0xFFf2f2f2),
   ),
@@ -15,20 +15,20 @@ ThemeData lightTheme = ThemeData.light().copyWith(
     backgroundColor: Color(0xFFf2f2f2),
   ),
   textTheme: const TextTheme(
-    bodyText1: TextStyle(
+    bodyLarge: TextStyle(
       color: Color(0xFF05042e),
     ),
-    bodyText2: TextStyle(
+    bodyMedium: TextStyle(
       color: Color(0xFF37474F),
     ),
-    subtitle1: TextStyle(
+    titleMedium: TextStyle(
       color: Color(0xFF616161),
     ),
   ),
 );
 
 ThemeData darkTheme = ThemeData.dark().copyWith(
-  backgroundColor: const Color(0xFF111b25),
+  scaffoldBackgroundColor: const Color(0xFF111b25),
   cardTheme: const CardTheme(
     color: Color(0xff192533),
   ),
@@ -42,13 +42,13 @@ ThemeData darkTheme = ThemeData.dark().copyWith(
     color: Color(0xFFf9fafa),
   ),
   textTheme: const TextTheme(
-    bodyText1: TextStyle(
+    bodyLarge: TextStyle(
       color: Color(0xFFf9fafa),
     ),
-    bodyText2: TextStyle(
+    bodyMedium: TextStyle(
       color: Color(0xfff9f9f9),
     ),
-    subtitle1: TextStyle(
+    titleMedium: TextStyle(
       color: Color(0xFFececec),
     ),
   ),

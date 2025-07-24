@@ -87,7 +87,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
           'Weather Forecast',
           style: Theme.of(context)
               .textTheme
-              .bodyText2!
+              .bodyMedium!
               .copyWith(fontSize: heading, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 15),
@@ -199,7 +199,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
                 'Recent Search',
                 style: Theme.of(context)
                     .textTheme
-                    .subtitle1!
+                    .titleMedium!
                     .copyWith(fontSize: smallSize, fontStyle: FontStyle.italic),
               ),
               InkWell(
@@ -281,7 +281,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
                                         e.name,
                                         style: Theme.of(context)
                                             .textTheme
-                                            .bodyText2!
+                                            .bodyMedium!
                                             .copyWith(
                                                 fontSize: menuPara,
                                                 fontWeight: FontWeight.w500),
@@ -294,7 +294,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
                                       e.country,
                                       style: Theme.of(context)
                                           .textTheme
-                                          .bodyText2!
+                                          .bodyMedium!
                                           .copyWith(
                                             fontSize: smallSize,
                                           ),
@@ -306,7 +306,7 @@ class _DrawerScreenState extends State<DrawerScreen> {
                                   e.temp.toStringAsFixed(1).toString() + ' °',
                                   style: Theme.of(context)
                                       .textTheme
-                                      .bodyText2!
+                                      .bodyMedium!
                                       .copyWith(
                                         fontSize: heading,
                                         fontWeight: FontWeight.w500,

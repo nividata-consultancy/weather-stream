@@ -20,7 +20,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: Stack(
         children: [
           Center(
@@ -41,14 +41,14 @@ class _SplashScreenViewState extends State<SplashScreenView> {
                     'Weather Forecast',
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1!
+                        .bodyLarge!
                         .copyWith(fontWeight: FontWeight.w800, fontSize: 24),
                   ),
                   Text(
                     'Get weather info with superior accuracy',
                     style: Theme.of(context)
                         .textTheme
-                        .bodyText1!
+                        .bodyLarge!
                         .copyWith(fontSize: 14, fontWeight: FontWeight.normal),
                   )
                 ],

@@ -105,7 +105,7 @@ class _LocationViewState extends State<LocationView> {
                   ),
                   Text(
                     'Search your Location',
-                    style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                    style: Theme.of(context).textTheme.titleMedium!.copyWith(
                         fontSize: paraMeter, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(
@@ -115,7 +115,7 @@ class _LocationViewState extends State<LocationView> {
                     padding: const EdgeInsets.only(left: 14.0),
                     child: Text(
                       'Search and get real time weather \n    information of your Location',
-                      style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                      style: Theme.of(context).textTheme.titleMedium!.copyWith(
                           fontSize: smallSize, fontWeight: FontWeight.w400),
                     ),
                   ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:weather_stream/theme/fontsize.dart';
+
 import '../../data/model/cityweather_detail.dart';
 import '../../data/model/forecastweather.dart';
 import '../../utils/currency_peakerutils.dart';
@@ -49,6 +50,7 @@ class BottomBarCard extends StatelessWidget {
   final int index;
   final ForecastWeather? forestWeatherList;
   final CityWeather? cityWeatherList;
+
   @override
   Widget build(BuildContext context) {
     return SizedBox(
@@ -62,7 +64,7 @@ class BottomBarCard extends StatelessWidget {
               city,
               style: Theme.of(context)
                   .textTheme
-                  .bodyText2!
+                  .bodyMedium!
                   .copyWith(fontWeight: FontWeight.w700, fontSize: heading),
             ),
             const SizedBox(
@@ -72,7 +74,7 @@ class BottomBarCard extends StatelessWidget {
               CurrencyPickerUtils.getCountryByIsoCode(country),
               style: Theme.of(context)
                   .textTheme
-                  .subtitle1!
+                  .titleMedium!
                   .copyWith(fontWeight: FontWeight.w400, fontSize: paraMeter),
             ),
             const SizedBox(
@@ -136,7 +138,7 @@ class BottomBarCard extends StatelessWidget {
                                     '%',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText2!
+                                    .bodyMedium!
                                     .copyWith(
                                         fontWeight: FontWeight.bold,
                                         fontSize: paraMeter),
@@ -145,7 +147,7 @@ class BottomBarCard extends StatelessWidget {
                                 'PRECIPITATION',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .subtitle1!
+                                    .titleMedium!
                                     .copyWith(
                                         fontWeight: FontWeight.w600,
                                         fontSize: bottomPara),
@@ -161,7 +163,7 @@ class BottomBarCard extends StatelessWidget {
                                 humidity.toStringAsFixed(1).toString() + '%',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText2!
+                                    .bodyMedium!
                                     .copyWith(
                                         fontWeight: FontWeight.bold,
                                         fontSize: paraMeter),
@@ -169,7 +171,7 @@ class BottomBarCard extends StatelessWidget {
                               Text('HUMIDITY',
                                   style: Theme.of(context)
                                       .textTheme
-                                      .subtitle1!
+                                      .titleMedium!
                                       .copyWith(
                                           fontWeight: FontWeight.w600,
                                           fontSize: bottomPara))
@@ -190,7 +192,7 @@ class BottomBarCard extends StatelessWidget {
                                           ' MPH',
                                       style: Theme.of(context)
                                           .textTheme
-                                          .bodyText2!
+                                          .bodyMedium!
                                           .copyWith(
                                               fontWeight: FontWeight.bold,
                                               fontSize: paraMeter),
@@ -201,7 +203,7 @@ class BottomBarCard extends StatelessWidget {
                                       textAlign: TextAlign.start,
                                       style: Theme.of(context)
                                           .textTheme
-                                          .bodyText2!
+                                          .bodyMedium!
                                           .copyWith(
                                               fontWeight: FontWeight.bold,
                                               fontSize: paraMeter),
@@ -210,7 +212,7 @@ class BottomBarCard extends StatelessWidget {
                                 ' WIND',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .subtitle1!
+                                    .titleMedium!
                                     .copyWith(
                                         fontWeight: FontWeight.w600,
                                         fontSize: bottomPara),
@@ -226,7 +228,7 @@ class BottomBarCard extends StatelessWidget {
                               Text(rain.toStringAsFixed(0).toString() + ' mm',
                                   style: Theme.of(context)
                                       .textTheme
-                                      .bodyText2!
+                                      .bodyMedium!
                                       .copyWith(
                                           fontWeight: FontWeight.bold,
                                           fontSize: paraMeter)),
@@ -234,7 +236,7 @@ class BottomBarCard extends StatelessWidget {
                                 'RAIN VOLUME',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .subtitle1!
+                                    .titleMedium!
                                     .copyWith(
                                         fontWeight: FontWeight.w600,
                                         fontSize: bottomPara),
@@ -251,7 +253,7 @@ class BottomBarCard extends StatelessWidget {
                                 pod.toUpperCase(),
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText2!
+                                    .bodyMedium!
                                     .copyWith(
                                         fontWeight: FontWeight.bold,
                                         fontSize: paraMeter),
@@ -260,7 +262,7 @@ class BottomBarCard extends StatelessWidget {
                                 'SYSTEM POD',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .subtitle1!
+                                    .titleMedium!
                                     .copyWith(
                                         fontWeight: FontWeight.w600,
                                         fontSize: bottomPara),
@@ -283,7 +285,7 @@ class BottomBarCard extends StatelessWidget {
                                         ' In/HG',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .bodyText2!
+                                    .bodyMedium!
                                     .copyWith(
                                         fontWeight: FontWeight.bold,
                                         fontSize: paraMeter),
@@ -292,7 +294,7 @@ class BottomBarCard extends StatelessWidget {
                                 'PRESSURE',
                                 style: Theme.of(context)
                                     .textTheme
-                                    .subtitle1!
+                                    .titleMedium!
                                     .copyWith(
                                         fontWeight: FontWeight.w600,
                                         fontSize: bottomPara),
@@ -316,7 +318,7 @@ class BottomBarCard extends StatelessWidget {
                                 ' in/Hg',
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText2!
+                                .bodyMedium!
                                 .copyWith(
                                     fontWeight: FontWeight.bold,
                                     fontSize: paraMeter),
@@ -325,7 +327,7 @@ class BottomBarCard extends StatelessWidget {
                             'GROUND-LEVEL',
                             style: Theme.of(context)
                                 .textTheme
-                                .subtitle1!
+                                .titleMedium!
                                 .copyWith(
                                     fontWeight: FontWeight.w600,
                                     fontSize: bottomPara),
@@ -338,7 +340,7 @@ class BottomBarCard extends StatelessWidget {
                             seaLevel.toStringAsFixed(2).toString() + '%',
                             style: Theme.of(context)
                                 .textTheme
-                                .bodyText2!
+                                .bodyMedium!
                                 .copyWith(
                                     fontWeight: FontWeight.bold,
                                     fontSize: paraMeter),
@@ -347,7 +349,7 @@ class BottomBarCard extends StatelessWidget {
                             'SEA-LEVEL',
                             style: Theme.of(context)
                                 .textTheme
-                                .subtitle1!
+                                .titleMedium!
                                 .copyWith(
                                     fontWeight: FontWeight.w600,
                                     fontSize: bottomPara),

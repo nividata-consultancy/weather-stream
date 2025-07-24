@@ -1,0 +1,2 @@
+/Users/mehulmakwana/Desktop/Projects/weather-stream/android/app/.cxx/Debug/t5m1vy6a/arm64-v8a/CMakeFiles/edit_cache.dir
+/Users/mehulmakwana/Desktop/Projects/weather-stream/android/app/.cxx/Debug/t5m1vy6a/arm64-v8a/CMakeFiles/rebuild_cache.dir

@@ -56,7 +56,7 @@ class _CityTimeViewState extends State<CityTimeView> {
               CurrencyPickerUtils.getCountryByIsoCode(widget.cityTime.country),
               maxLines: 2,
               textAlign: TextAlign.center,
-              style: Theme.of(context).textTheme.bodyText1!.copyWith(
+              style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                     fontSize: paraMeter,
                   ),
             ),
@@ -67,7 +67,7 @@ class _CityTimeViewState extends State<CityTimeView> {
             parseTimeStamp(widget.date),
             style: Theme.of(context)
                 .textTheme
-                .subtitle1!
+                .titleMedium!
                 .copyWith(fontSize: smallSize, fontStyle: FontStyle.italic),
           ),
         ),
@@ -96,7 +96,7 @@ class _CityTimeViewState extends State<CityTimeView> {
                   ),
                   Text(
                     parseTimeStamp2(widget.sunrise),
-                    style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                    style: Theme.of(context).textTheme.titleMedium!.copyWith(
                         fontSize: smallSize, fontStyle: FontStyle.italic),
                   ),
                   SvgPicture.asset(
@@ -108,7 +108,7 @@ class _CityTimeViewState extends State<CityTimeView> {
                   ),
                   Text(
                     parseTimeStamp2(widget.sunset),
-                    style: Theme.of(context).textTheme.subtitle1!.copyWith(
+                    style: Theme.of(context).textTheme.titleMedium!.copyWith(
                         fontSize: smallSize, fontStyle: FontStyle.italic),
                   ),
                 ],
@@ -121,7 +121,7 @@ class _CityTimeViewState extends State<CityTimeView> {
           child: Text(
             widget.cityWeather[0].description,
             textAlign: TextAlign.start,
-            style: Theme.of(context).textTheme.bodyText1!.copyWith(
+            style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                   fontSize: 30,
                   fontStyle: FontStyle.italic,
                 ),

@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/mehulmakwana/Library/Developer/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/mehulmakwana/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/mehulmakwana/Desktop/Projects/weather-stream/android/app/.cxx/Debug/t5m1vy6a/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/mehulmakwana/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/mehulmakwana/Desktop/Projects/weather-stream/android/app/.cxx/Debug/t5m1vy6a/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}

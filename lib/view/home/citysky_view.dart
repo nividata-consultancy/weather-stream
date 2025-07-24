@@ -79,7 +79,7 @@ class _CitySkyViewState extends State<CitySkyView> {
                             .toString()
                         : widget.cityMain.temp.toStringAsFixed(0).toString(),
                     softWrap: true,
-                    style: Theme.of(context).textTheme.bodyText1!.copyWith(
+                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
                         fontSize: mainTemp, fontWeight: FontWeight.bold),
                   ),
                   (widget.status)
@@ -88,7 +88,7 @@ class _CitySkyViewState extends State<CitySkyView> {
                           child: Text(
                             '°F',
                             style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
+                                Theme.of(context).textTheme.titleMedium!.copyWith(
                                       fontSize: heading,
                                     ),
                           ),
@@ -98,7 +98,7 @@ class _CitySkyViewState extends State<CitySkyView> {
                           child: Text(
                             '°C',
                             style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
+                                Theme.of(context).textTheme.titleMedium!.copyWith(
                                       fontSize: heading,
                                     ),
                           ),
@@ -136,14 +136,14 @@ class _CitySkyViewState extends State<CitySkyView> {
                                 : widget.tempMax.toStringAsFixed(0).toString() +
                                     '°',
                             style:
-                                Theme.of(context).textTheme.bodyText1!.copyWith(
+                                Theme.of(context).textTheme.bodyLarge!.copyWith(
                                       fontSize: heading,
                                     ),
                           ),
                           Text(
                             ' High',
                             style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
+                                Theme.of(context).textTheme.titleMedium!.copyWith(
                                       fontSize: smallSize,
                                     ),
                           ),
@@ -172,14 +172,14 @@ class _CitySkyViewState extends State<CitySkyView> {
                                     '°',
                             textAlign: TextAlign.start,
                             style:
-                                Theme.of(context).textTheme.bodyText1!.copyWith(
+                                Theme.of(context).textTheme.bodyLarge!.copyWith(
                                       fontSize: heading,
                                     ),
                           ),
                           Text(
                             ' low',
                             style:
-                                Theme.of(context).textTheme.subtitle1!.copyWith(
+                                Theme.of(context).textTheme.titleMedium!.copyWith(
                                       fontSize: 12,
                                     ),
                           ),
